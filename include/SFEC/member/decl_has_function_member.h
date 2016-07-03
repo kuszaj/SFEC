@@ -1,3 +1,13 @@
+/**
+ * File: SFEC/member/decl_has_function_member.h
+ *
+ * Description: Defines macro used for declaring function and operator member
+ * SFINAE structs. All structs are named as "has_function_member_<function name>"
+ * or "has_operator_member_<chosen name suffix>".
+ *
+ * Author(s): Piotr Kuszaj (2016)
+ */
+
 #ifndef SFEC_MEMBER_DECL_HAS_FUNCTION_MEMBER_H_
 #define SFEC_MEMBER_DECL_HAS_FUNCTION_MEMBER_H_
 

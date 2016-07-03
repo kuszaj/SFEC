@@ -1,3 +1,24 @@
+/**
+ * File: SFEC/member/compound_assignment_operators.h
+ *
+ * Description: Defines macro used for declaring standard compound
+ * assignment operator member SFINAE structs within the SFEC::member
+ * namespace:
+ *
+ *     has_operator_assign_add    <- Addition assignment
+ *     has_operator_assign_sub    <- Substraction assignment
+ *     has_operator_assign_mul    <- Multiplication assignment
+ *     has_operator_assign_div    <- Division assignment
+ *     has_operator_assign_mod    <- Modulo assignment
+ *     has_operator_assign_and    <- Bitwise AND assignment
+ *     has_operator_assign_or     <- Bitwise OR assignment
+ *     has_operator_assign_xor    <- Bitwise XOR assignment
+ *     has_operator_assign_lshift <- Bitwise left shift assignment
+ *     has_operator_assign_rshift <- Bitwise right shift assignment
+ *
+ * Author(s): Piotr Kuszaj (2016)
+ */
+
 #ifndef SFEC_MEMBER_COMPOUND_ASSIGNMENT_OPERATORS_H_
 #define SFEC_MEMBER_COMPOUND_ASSIGNMENT_OPERATORS_H_
 

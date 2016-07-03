@@ -1,3 +1,13 @@
+/**
+ * File: SFEC/member/_gen_compound_assignment_operators.h
+ *
+ * Description: Defines general macro used for declaring compound assignment operator
+ * member SFINAE structs within the SFEC::member namespace. It should not be used by
+ * the end user.
+ *
+ * Author(s): Piotr Kuszaj (2016)
+ */
+
 #ifndef SFEC_MBMBER__GEN_COMPOUND_ASSIGNMENT_OPERATORS_H_
 #define SFEC_MEMBER__GEN_COMPOUND_ASSIGNMENT_OPERATORS_H_
 

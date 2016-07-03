@@ -1,3 +1,16 @@
+/**
+ * File: SFEC/member/logical_operators.h
+ *
+ * Description: Defines macro used for declaring standard logical
+ * operator member SFINAE structs within the SFEC::member namespace:
+ *
+ *     has_operator_logical_and    <- Logical AND
+ *     has_operator_logical_or     <- Logical OR
+ *     has_operator_logical_not    <- Logical NOT
+ *
+ * Author(s): Piotr Kuszaj (2016)
+ */
+
 #ifndef SFEC_MEMBER_LOGICAL_OPERATORS_H_
 #define SFEC_MEMBER_LOGICAL_OPERATORS_H_
 

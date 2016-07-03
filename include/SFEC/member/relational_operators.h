@@ -1,3 +1,19 @@
+/**
+ * File: SFEC/member/relational_operators.h
+ *
+ * Description: Defines macro used for declaring standard relational
+ * operator member SFINAE structs within the SFEC::member namespace:
+ *
+ *     has_operator_eq  <- Equal to
+ *     has_operator_neq <- Not equal to
+ *     has_operator_gt  <- Greater than
+ *     has_operator_lt  <- Less than
+ *     has_operator_geq <- Greater than or equal to
+ *     has_operator_leq <- Less than or equal to
+ *
+ * Author(s): Piotr Kuszaj (2016)
+ */
+
 #ifndef SFEC_MEMBER_RELATIONAL_OPERATORS_H_
 #define SFEC_MEMBER_RELATIONAL_OPERATORS_H_
 

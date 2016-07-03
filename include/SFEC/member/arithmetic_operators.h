@@ -1,3 +1,25 @@
+/**
+ * File: SFEC/member/arithmetic_operators.h
+ *
+ * Description: Defines macro used for declaring standard arithmetic
+ * operator member SFINAE structs within the SFEC::member namespace:
+ *
+ *     has_operator_assign       <- Assignment
+ *     has_operator_add          <- Addition
+ *     has_operator_sub          <- Substration
+ *     has_operator_mul          <- Multiplication
+ *     has_operator_div          <- Division
+ *     has_operator_mod          <- Modulo
+ *     has_operator_unary_plus   <- Unary plus
+ *     has_operator_unary_minus  <- Unary minus
+ *     has_operator_incr_prefix  <- Increment (prefix)
+ *     has_operator_incr_postfix <- Increment (postfix)
+ *     has_operator_decr_prefix  <- Decrement (prefix)
+ *     has_operator_decr_postfix <- Decrement (postfix)
+ *
+ * Author(s): Piotr Kuszaj (2016)
+ */
+
 #ifndef SFEC_MEMBER_ARITHMETIC_OPERATORS_H_
 #define SFEC_MEMBER_ARITHMETIC_OPERATORS_H_
 
@@ -39,7 +61,7 @@ using has_operator_unary_minus  // Unary minus
     = has_operator__gen_sub<T, Ret>;
 
 template <typename T, typename Ret>
-using has_operator_incr_prefix // Increment (prefix)
+using has_operator_incr_prefix  // Increment (prefix)
     = has_operator__gen_incr<T, Ret&>;
 
 template <typename T, typename Ret>
@@ -47,7 +69,7 @@ using has_operator_incr_postfix // Increment (postfix)
     = has_operator__gen_incr<T, Ret, int>;
 
 template <typename T, typename Ret>
-using has_operator_decr_prefix // Decrement (prefix)
+using has_operator_decr_prefix  // Decrement (prefix)
     = has_operator__gen_decr<T, Ret&>;
 
 template <typename T, typename Ret>

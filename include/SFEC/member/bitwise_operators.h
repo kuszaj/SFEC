@@ -1,3 +1,19 @@
+/**
+ * File: SFEC/member/bitwise_operators.h
+ *
+ * Description: Defines macro used for declaring standard bitwise
+ * operator member SFINAE structs within the SFEC::member namespace:
+ *
+ *     has_operator_bitwise_not    <- Bitwise NOT
+ *     has_operator_bitwise_and    <- Bitwise AND
+ *     has_operator_bitwise_or     <- Bitwise OR
+ *     has_operator_bitwise_xor    <- Bitwise XOR
+ *     has_operator_bitwise_lshift <- Bitwise left shift
+ *     has_operator_bitwise_rshift <- Bitwise right shift
+ *
+ * Author(s): Piotr Kuszaj (2016)
+ */
+
 #ifndef SFEC_MEMBER_BITWISE_OPERATORS_H_
 #define SFEC_MEMBER_BITWISE_OPERATORS_H_
 

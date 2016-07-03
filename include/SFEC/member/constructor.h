@@ -1,3 +1,18 @@
+/**
+ * File: SFEC/member/constructor.h
+ *
+ * Description: Defines macro used for declaring constructor member SFINAE
+ * structs within the SFEC::member namespace:
+ *
+ *     has_constructor         <- general constructor, with user-defined
+ *                                arguments
+ *     has_default_constructor <- default constructor
+ *     has_copy_constructor    <- copy constructor
+ *     has_move_constructor    <- move constructor
+ *
+ * Author(s): Piotr Kuszaj (2016)
+ */
+
 #ifndef SFEC_MEMBER_HAS_CONSTRUCTOR_H_
 #define SFEC_MEMBER_HAS_CONSTRUCTOR_H_
 

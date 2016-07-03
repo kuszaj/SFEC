@@ -1,3 +1,12 @@
+/**
+ * File: SFEC/member/decl_has_data_member.h
+ *
+ * Description: Defines macro used for declaring data member SFINAE structs.
+ * All structs are named as "has_data_member_<member name>".
+ *
+ * Author(s): Piotr Kuszaj (2016)
+ */
+
 #ifndef SFEC_MEMBER_DECL_HAS_DATA_MEMBER_H_
 #define SFEC_MEMBER_DECL_HAS_DATA_MEMBER_H_
 

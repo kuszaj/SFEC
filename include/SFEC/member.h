@@ -1,3 +1,11 @@
+/**
+ * File: SFEC/member.h
+ *
+ * Description: Collective header file for SFEC::member namespace.
+ *
+ * Author(s): Piotr Kuszaj (2016)
+ */
+
 #ifndef SFEC_MEMBER_H_
 #define SFEC_MEMBER_H_
 

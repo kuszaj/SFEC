@@ -1,3 +1,13 @@
+/**
+ * File: SFEC/member/_gen_arithmetic_operators.h
+ *
+ * Description: Defines general macro used for declaring arithmetic operator
+ * member SFINAE structs within the SFEC::member namespace. It should not be used by
+ * the end user.
+ *
+ * Author(s): Piotr Kuszaj (2016)
+ */
+
 #ifndef SFEC_MEMBER__GEN_ARITHMETIC_OPERATORS_H_
 #define SFEC_MEMBER__GEN_ARITHMETIC_OPERATORS_H_
 
