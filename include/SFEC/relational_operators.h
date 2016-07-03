@@ -1,8 +1,8 @@
 /**
- * File: SFEC/member/relational_operators.h
+ * File: SFEC/relational_operators.h
  *
  * Description: Defines macro used for declaring standard relational
- * operator member SFINAE structs within the SFEC::member namespace:
+ * operator member SFINAE structs within the SFEC namespace:
  *
  *     has_operator_eq  <- Equal to
  *     has_operator_neq <- Not equal to
@@ -14,13 +14,12 @@
  * Author(s): Piotr Kuszaj (2016)
  */
 
-#ifndef SFEC_MEMBER_RELATIONAL_OPERATORS_H_
-#define SFEC_MEMBER_RELATIONAL_OPERATORS_H_
+#ifndef SFEC_RELATIONAL_OPERATORS_H_
+#define SFEC_RELATIONAL_OPERATORS_H_
 
-#include <SFEC/member/_gen_relational_operators.h>
+#include <SFEC/_gen_relational_operators.h>
 
 namespace SFEC {
-namespace member {
 
 template <typename T, typename Arg>
 using has_operator_eq                     // Equal to
@@ -46,7 +45,6 @@ template <typename T, typename Arg>
 using has_operator_leq                    // Less than or equal to
     = has_operator__gen_leq<T, bool, Arg>;
 
-} /* SFEC::member */
 } /* SFEC */
 
-#endif /* SFEC_MEMBER_RELATIONAL_OPERATORS_H_ */
+#endif /* SFEC_RELATIONAL_OPERATORS_H_ */

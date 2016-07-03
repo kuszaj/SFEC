@@ -1,5 +1,5 @@
 /**
- * File: SFEC/member/decl_has_function_member.h
+ * File: SFEC/decl_has_function_member.h
  *
  * Description: Defines macro used for declaring function and operator member
  * SFINAE structs. All structs are named as "has_function_member_<function name>"
@@ -8,10 +8,10 @@
  * Author(s): Piotr Kuszaj (2016)
  */
 
-#ifndef SFEC_MEMBER_DECL_HAS_FUNCTION_MEMBER_H_
-#define SFEC_MEMBER_DECL_HAS_FUNCTION_MEMBER_H_
+#ifndef SFEC_DECL_HAS_FUNCTION_MEMBER_H_
+#define SFEC_DECL_HAS_FUNCTION_MEMBER_H_
 
-#include <SFEC/member/_gen_decl_has_function_member.h>
+#include <SFEC/_gen_decl_has_function_member.h>
 
 #define SFEC_declHasFunctionMemberType(FUNCTION)                                 \
     _SFEC_generalDeclHasFunctionMember(FUNCTION, has_function_member_##FUNCTION)
@@ -19,4 +19,4 @@
 #define SFEC_declHasOperatorType(OPERATOR, NAMESUFFIX)                           \
     _SFEC_generalDeclHasFunctionMember(OPERATOR, has_operator_##NAMESUFFIX)
 
-#endif /* SFEC_MEMBER_DECL_HAS_FUNCTION_MEMBER_H_ */
+#endif /* SFEC_DECL_HAS_FUNCTION_MEMBER_H_ */

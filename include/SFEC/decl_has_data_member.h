@@ -1,5 +1,5 @@
 /**
- * File: SFEC/member/decl_has_data_member.h
+ * File: SFEC/decl_has_data_member.h
  *
  * Description: Defines macro used for declaring data member SFINAE structs.
  * All structs are named as "has_data_member_<member name>".
@@ -7,8 +7,8 @@
  * Author(s): Piotr Kuszaj (2016)
  */
 
-#ifndef SFEC_MEMBER_DECL_HAS_DATA_MEMBER_H_
-#define SFEC_MEMBER_DECL_HAS_DATA_MEMBER_H_
+#ifndef SFEC_DECL_HAS_DATA_MEMBER_H_
+#define SFEC_DECL_HAS_DATA_MEMBER_H_
 
 #include <type_traits>
 
@@ -27,4 +27,4 @@ struct has_data_member_##MEMBER {                             \
     constexpr static const bool value = hasMethod<T>::value;  \
 }
 
-#endif /* SFEC_MEMBER_DECL_HAS_DATA_MEMBER_H_ */
+#endif /* SFEC_DECL_HAS_DATA_MEMBER_H_ */

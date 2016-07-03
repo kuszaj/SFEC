@@ -1,8 +1,8 @@
 /**
- * File: SFEC/member/bitwise_operators.h
+ * File: SFEC/bitwise_operators.h
  *
  * Description: Defines macro used for declaring standard bitwise
- * operator member SFINAE structs within the SFEC::member namespace:
+ * operator member SFINAE structs within the SFEC namespace:
  *
  *     has_operator_bitwise_not    <- Bitwise NOT
  *     has_operator_bitwise_and    <- Bitwise AND
@@ -14,13 +14,12 @@
  * Author(s): Piotr Kuszaj (2016)
  */
 
-#ifndef SFEC_MEMBER_BITWISE_OPERATORS_H_
-#define SFEC_MEMBER_BITWISE_OPERATORS_H_
+#ifndef SFEC_BITWISE_OPERATORS_H_
+#define SFEC_BITWISE_OPERATORS_H_
 
-#include <SFEC/member/_gen_bitwise_operators.h>
+#include <SFEC/_gen_bitwise_operators.h>
 
 namespace SFEC {
-namespace member {
 
 template <typename T, typename Ret>
 using has_operator_bitwise_not    // Bitwise NOT
@@ -46,7 +45,6 @@ template <typename T, typename Ret, typename Arg>
 using has_operator_bitwise_rshift // Bitwise right shift
     = has_operator__gen_bitwise_rshift<T, Ret, Arg>;
 
-} /* SFEC::member */
 } /* SFEC */
 
 #endif /* SFEC_BITWISE_OPERATORS_H_ */

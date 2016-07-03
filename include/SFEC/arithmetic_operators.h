@@ -1,8 +1,8 @@
 /**
- * File: SFEC/member/arithmetic_operators.h
+ * File: SFEC/arithmetic_operators.h
  *
  * Description: Defines macro used for declaring standard arithmetic
- * operator member SFINAE structs within the SFEC::member namespace:
+ * operator member SFINAE structs within the SFEC namespace:
  *
  *     has_operator_assign       <- Assignment
  *     has_operator_add          <- Addition
@@ -20,13 +20,12 @@
  * Author(s): Piotr Kuszaj (2016)
  */
 
-#ifndef SFEC_MEMBER_ARITHMETIC_OPERATORS_H_
-#define SFEC_MEMBER_ARITHMETIC_OPERATORS_H_
+#ifndef SFEC_ARITHMETIC_OPERATORS_H_
+#define SFEC_ARITHMETIC_OPERATORS_H_
 
-#include <SFEC/member/_gen_arithmetic_operators.h>
+#include <SFEC/_gen_arithmetic_operators.h>
 
 namespace SFEC {
-namespace member {
 
 template <typename T, typename Ret, typename Arg>
 using has_operator_assign       // Assignment
@@ -76,7 +75,6 @@ template <typename T, typename Ret>
 using has_operator_decr_postfix // Decrement (postfix)
     = has_operator__gen_decr<T, Ret, int>;
 
-} /* SFEC::member */
 } /* SFEC */
 
-#endif /* SFEC_MEMBER_ARITHMETIC_OPERATORS_H_ */
+#endif /* SFEC_ARITHMETIC_OPERATORS_H_ */

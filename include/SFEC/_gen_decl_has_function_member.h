@@ -1,5 +1,5 @@
 /**
- * File: SFEC/member/_gen_decl_has_function_member.h
+ * File: SFEC/_gen_decl_has_function_member.h
  *
  * Description: Defines general macro used for declaring function and operator member
  * SFINAE structs. It should not be used by the end user.
@@ -7,8 +7,8 @@
  * Author(s): Piotr Kuszaj (2016)
  */
 
-#ifndef SFEC_MEMBER__GEN_DECL_HAS_FUNCTION_MEMBER_H_
-#define SFEC_MEMBER__GEN_DECL_HAS_FUNCTION_MEMBER_H_
+#ifndef SFEC__GEN_DECL_HAS_FUNCTION_MEMBER_H_
+#define SFEC__GEN_DECL_HAS_FUNCTION_MEMBER_H_
 
 #include <type_traits>
 
@@ -28,4 +28,4 @@ struct STRUCTNAME {                                                             
     constexpr static const bool value = hasMethod<T>::value;                               \
 }
 
-#endif /* SFEC_MEMBER__GEN_DECL_HAS_FUNCTION_MEMBER_H_ */
+#endif /* SFEC__GEN_DECL_HAS_FUNCTION_MEMBER_H_ */

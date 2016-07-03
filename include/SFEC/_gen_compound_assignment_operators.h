@@ -1,20 +1,19 @@
 /**
- * File: SFEC/member/_gen_compound_assignment_operators.h
+ * File: SFEC/_gen_compound_assignment_operators.h
  *
  * Description: Defines general macro used for declaring compound assignment operator
- * member SFINAE structs within the SFEC::member namespace. It should not be used by
+ * member SFINAE structs within the SFEC namespace. It should not be used by
  * the end user.
  *
  * Author(s): Piotr Kuszaj (2016)
  */
 
 #ifndef SFEC_MBMBER__GEN_COMPOUND_ASSIGNMENT_OPERATORS_H_
-#define SFEC_MEMBER__GEN_COMPOUND_ASSIGNMENT_OPERATORS_H_
+#define SFEC__GEN_COMPOUND_ASSIGNMENT_OPERATORS_H_
 
-#include <SFEC/member/decl_has_function_member.h>
+#include <SFEC/decl_has_function_member.h>
 
 namespace SFEC {
-namespace member {
 
 SFEC_declHasOperatorType(operator+=,  _gen_assign_add);    // Addition assignment
 SFEC_declHasOperatorType(operator-=,  _gen_assign_sub);    // Substraction assignment
@@ -27,7 +26,6 @@ SFEC_declHasOperatorType(operator^=,  _gen_assign_xor);    // Bitwise XOR assign
 SFEC_declHasOperatorType(operator<<=, _gen_assign_lshift); // Bitwise left shift assignment
 SFEC_declHasOperatorType(operator>>=, _gen_assign_rshift); // Bitwise right shift assignment
 
-} /* SFEC::member */
 } /* SFEC */
 
-#endif /* SFEC_MEMBER__GEN_COMPOUND_ASSIGNMENT_OPERATORS_H_ */
+#endif /* SFEC__GEN_COMPOUND_ASSIGNMENT_OPERATORS_H_ */

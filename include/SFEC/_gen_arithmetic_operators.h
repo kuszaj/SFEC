@@ -1,20 +1,19 @@
 /**
- * File: SFEC/member/_gen_arithmetic_operators.h
+ * File: SFEC/_gen_arithmetic_operators.h
  *
  * Description: Defines general macro used for declaring arithmetic operator
- * member SFINAE structs within the SFEC::member namespace. It should not be used by
+ * member SFINAE structs within the SFEC namespace. It should not be used by
  * the end user.
  *
  * Author(s): Piotr Kuszaj (2016)
  */
 
-#ifndef SFEC_MEMBER__GEN_ARITHMETIC_OPERATORS_H_
-#define SFEC_MEMBER__GEN_ARITHMETIC_OPERATORS_H_
+#ifndef SFEC__GEN_ARITHMETIC_OPERATORS_H_
+#define SFEC__GEN_ARITHMETIC_OPERATORS_H_
 
-#include <SFEC/member/decl_has_function_member.h>
+#include <SFEC/decl_has_function_member.h>
 
 namespace SFEC {
-namespace member {
 
 SFEC_declHasOperatorType(operator=,  _gen_assign); // General ssignment
 SFEC_declHasOperatorType(operator+,  _gen_add);    // General addition
@@ -25,7 +24,6 @@ SFEC_declHasOperatorType(operator%,  _gen_mod);    // General modulo
 SFEC_declHasOperatorType(operator++, _gen_incr);   // General increment
 SFEC_declHasOperatorType(operator--, _gen_decr);   // General decrement
 
-} /* SFEC::member */
 } /* SFEC */
 
-#endif /* SFEC_MEMBER__GEN_ARITHMETIC_OPERATORS_H_ */
+#endif /* SFEC__GEN_ARITHMETIC_OPERATORS_H_ */

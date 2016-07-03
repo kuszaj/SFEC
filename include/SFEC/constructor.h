@@ -1,8 +1,8 @@
 /**
- * File: SFEC/member/constructor.h
+ * File: SFEC/constructor.h
  *
  * Description: Defines macro used for declaring constructor member SFINAE
- * structs within the SFEC::member namespace:
+ * structs within the SFEC namespace:
  *
  *     has_constructor         <- general constructor, with user-defined
  *                                arguments
@@ -13,13 +13,12 @@
  * Author(s): Piotr Kuszaj (2016)
  */
 
-#ifndef SFEC_MEMBER_HAS_CONSTRUCTOR_H_
-#define SFEC_MEMBER_HAS_CONSTRUCTOR_H_
+#ifndef SFEC_HAS_CONSTRUCTOR_H_
+#define SFEC_HAS_CONSTRUCTOR_H_
 
 #include <type_traits>
 
 namespace SFEC {
-namespace member {
 
 template <typename T = void,
           typename ... Args>
@@ -47,7 +46,6 @@ template <typename T>
 using has_move_constructor
     = has_constructor<T, T&&>;
 
-} /* SFEC::member */
 } /* SFEC */
 
-#endif /* SFEC_MEMBER_HAS_CONSTRUCTOR_H_ */
+#endif /* SFEC_HAS_CONSTRUCTOR_H_ */
