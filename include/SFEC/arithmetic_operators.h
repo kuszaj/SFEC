@@ -29,7 +29,7 @@ namespace SFEC {
 
 template <typename T, typename Ret, typename Arg>
 using has_operator_assign       // Assignment
-    = has_operator__gen_assign<T, Ret, Arg>;
+    = has_operator__gen_assign<T, Ret&, Arg>;
 
 template <typename T, typename Ret, typename Arg>
 using has_operator_add          // Addition

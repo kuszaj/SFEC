@@ -23,27 +23,27 @@ namespace SFEC {
 
 template <typename T, typename Arg>
 using has_operator_eq                     // Equal to
-    = has_operator__gen_eq<T, bool, Arg>;
+    = has_operator__gen_eq<T, bool, Arg const&>;
 
 template <typename T, typename Arg>
 using has_operator_neq                    // Not equal to
-    = has_operator__gen_neq<T, bool, Arg>;
+    = has_operator__gen_neq<T, bool, Arg const&>;
 
 template <typename T, typename Arg>
 using has_operator_gt                     // Greater than
-    = has_operator__gen_gt<T, bool, Arg>;
+    = has_operator__gen_gt<T, bool, Arg const&>;
 
 template <typename T, typename Arg>
 using has_operator_lt                     // Less than
-    = has_operator__gen_lt<T, bool, Arg>;
+    = has_operator__gen_lt<T, bool, Arg const&>;
 
 template <typename T, typename Arg>
 using has_operator_geq                    // Greater than or equal to
-    = has_operator__gen_geq<T, bool, Arg>;
+    = has_operator__gen_geq<T, bool, Arg const&>;
 
 template <typename T, typename Arg>
 using has_operator_leq                    // Less than or equal to
-    = has_operator__gen_leq<T, bool, Arg>;
+    = has_operator__gen_leq<T, bool, Arg const&>;
 
 } /* SFEC */
 

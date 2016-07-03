@@ -22,23 +22,23 @@ namespace SFEC {
 
 template <typename T, typename Ret, typename Arg>
 using has_operator_subscript             // Subscript
-    = has_operator__gen_subscript<T, Ret, Arg>;
+    = has_operator__gen_subscript<T, Ret&, Arg>;
 
 template <typename T, typename Ret>
 using has_operator_indirection           // Indirection
-    = has_operator__gen_indirection<T, Ret>;
+    = has_operator__gen_indirection<T, Ret&>;
 
 template <typename T, typename Ret>
 using has_operator_address_of            // Address-of
-    = has_operator__gen_address_of<T, Ret>;
+    = has_operator__gen_address_of<T, Ret*>;
 
 template <typename T, typename Ret>
 using has_operator_struct_dereference    // Structure dereference
-    = has_operator__gen_struct_dereference<T, Ret>;
+    = has_operator__gen_struct_dereference<T, Ret*>;
 
 template <typename T, typename Ret, typename Arg>
 using has_operator_member_select_by_ptm  // Member selected by pointer-to-member
-    = has_operator__gen_member_select_by_ptm<T, Ret, Arg>;
+    = has_operator__gen_member_select_by_ptm<T, Ret&, Arg>;
 
 
 } /* SFEC */
