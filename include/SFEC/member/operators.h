@@ -1,16 +1,14 @@
 /**
  * File: SFEC/member/operators.h
  *
- * Description: Collective header file for constructor and operator member
- * SFINAE structs.
+ * Description: Collective header file for operator member SFINAE
+ * structs.
  *
  * Author(s): Piotr Kuszaj (2016)
  */
 
 #ifndef SFEC_MEMBER_OPERATORS_H_
 #define SFEC_MEMBER_OPERATORS_H_
-
-#include <SFEC/member/constructor.h>
 
 #include <SFEC/member/arithmetic_operators.h>
 #include <SFEC/member/bitwise_operators.h>
