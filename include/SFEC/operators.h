@@ -10,6 +10,7 @@
 #ifndef SFEC_OPERATORS_H_
 #define SFEC_OPERATORS_H_
 
+#include <SFEC/alloc_operators.h>
 #include <SFEC/arithmetic_operators.h>
 #include <SFEC/bitwise_operators.h>
 #include <SFEC/compound_assignment_operators.h>
