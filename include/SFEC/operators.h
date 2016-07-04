@@ -16,6 +16,7 @@
 #include <SFEC/compound_assignment_operators.h>
 #include <SFEC/logical_operators.h>
 #include <SFEC/member_and_pointer_operators.h>
+#include <SFEC/other_operators.h>
 #include <SFEC/relational_operators.h>
 
 #endif /* SFEC_OPERATORS_H_ */
