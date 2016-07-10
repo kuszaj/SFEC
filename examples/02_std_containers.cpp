@@ -16,8 +16,7 @@
 #include <iostream>      // std::cout
 #include <iomanip>       // std::setw, std::setfill
 
-#include <SFEC/SFEC.h>   // SFEC_declHasDataMemberType,
-                         // SFEC_declHasFunctionMemberType
+#include <SFEC/SFEC.h>   // SFEC_declHasFunctionMemberType
 
 /**
  * Containers
