@@ -10,8 +10,9 @@ Since library is header-only, you can simply copy contains of `include` director
 You can also use provided ``Makefile:
 
 ```bash
-$ make install                           # will copy include/SFEC to /usr/local/include
-# or
+$ make install # will copy include/SFEC to /usr/local/include
+```
+or
 ```bash
 $ make install INSTALLDIR=</custom/path> # will copy include/SFEC to /custom/path
 ```
@@ -84,7 +85,7 @@ true
 false
 ```
 
-For more examples, please refer to `examples` directory. You can also run `make examples` to automatically build them in `examples/build`.
+For more examples, please refer to `examples` directory. You can also run `make` or `make examples` to automatically build them in `examples/build`.
 
 # Licence
 SFEC is distributed under the MIT licence, included in `LICENCE` file.
