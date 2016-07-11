@@ -14,7 +14,7 @@ $ make install # will copy include/SFEC to /usr/local/include
 ```
 or
 ```bash
-$ make install INSTALLDIR=</custom/path> # will copy include/SFEC to /custom/path
+$ make install INSTALLDIR=/custom/path # will copy include/SFEC to /custom/path
 ```
 
 # Usage
