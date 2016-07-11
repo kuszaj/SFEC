@@ -3,6 +3,8 @@
  *
  * Description: Example of automatic test checking, which
  * member functions are defined for various STD containers.
+ * A simple report is generated, which is saved in a log file
+ * with user-defined filename (default: 02_std_container.log).
  *
  * Author(s): Piotr Kuszaj (2016)
  */
