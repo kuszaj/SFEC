@@ -7,7 +7,7 @@ All of its functionality is based on **SFINAE** techniques (_**S**ubstitution **
 # Installation
 Since library is header-only, you can simply copy contains of `include` directory into your include search path or by adding `-I<path/to/SFEC>` to your compiler flags.
 
-You can also use provided ``Makefile:
+You can also use provided `Makefile`:
 
 ```bash
 $ make install # will copy include/SFEC to /usr/local/include
