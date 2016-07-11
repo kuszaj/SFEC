@@ -109,7 +109,7 @@ ContainerTest<Container>::ContainerTest() {
     m_report["pop_back"] =
         has_function_member_pop_back<Container>::value;
 
-    // push_front
+    // pop_front
     m_order.push_back("pop_front");
     m_report["pop_front"] =
         has_function_member_pop_front<Container>::value;
