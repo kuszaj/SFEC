@@ -29,9 +29,9 @@ TODO
 // Main header containing all SFEC library
 #include <SFEC/SFEC.h>
 
-#include <iostream>
-#include <iomanip>
+#include <iostream> // std::cout, std::endl, std::boolalpha
 
+// Tested class
 class C {
     public:
         int x;
@@ -42,10 +42,10 @@ class C {
         int y;
 };
 
-SFEC_declHasDataMemberType(x);        // declared has_data_member_x
-SFEC_declHasDataMemberType(y);        // declared has_data_member_y
+SFEC_declHasDataMemberType(x);        // declares has_data_member_x
+SFEC_declHasDataMemberType(y);        // declares has_data_member_y
 
-SFEC_declHasFunctionMemberType(func); // declared has_function_member_func
+SFEC_declHasFunctionMemberType(func); // declares has_function_member_func
 
 int main () {
     std::cout << std::boolalpha;
